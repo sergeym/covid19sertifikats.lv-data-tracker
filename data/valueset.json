@@ -2561,7 +2561,6 @@
     "urn:uvci:01:lv:adfa6a79c2a7e14201d4feaa5e7864e9",
     "urn:uvci:01:lv:bbcf80c7212dab76a77a62c95c2cdfc1",
     "urn:uvci:01:lv:663343dda125e024ceee0dfc0223f89c",
-    "urn:uvci:01:lv:fe04d586197f97a95877c2bbbd042ca5",
     "URN:UVCI:01:LV:16433F617A5636E94EBB2B47D798FE21",
     "urn:uvci:01:lv:a976e9beda265152d448839c4cfc3a9f",
     "urn:uvci:01:lv:929c9e71eec9efbee06f28561aebcd6a",
@@ -2846,7 +2845,6 @@
     "URN:UVCI:01:LV:0D972A246635448766272E52D0201A29",
     "urn:uvci:01:lv:574f4661743ea9a78e34374927ad6835",
     "urn:uvci:01:lv:2097537f83e657cd9985169a05adb269",
-    "urn:uvci:01:lv:76379730faf633382d365a18117d9cc9",
     "URN:UVCI:01:LV:4B3777629232A74463D8C3ED6B0C6FD7",
     "urn:uvci:01:lv:6e74fd2ccf19fdf7035d8b1391eb1d47",
     "URN:UVCI:01:LV:B7802124F78071622BEDEABC455D6C24",
@@ -11754,6 +11752,8 @@
     "urn:uvci:01:lv:9ba6ebac30ff44f6208b292972e5bae7",
     "urn:uvci:01:lv:a2f5982027c1598eb591a29073457558",
     "urn:uvci:01:lv:81c2211f96c65073ae0fd7db439bb1f6",
-    "urn:uvci:01:lv:2fe41a1d6e5bde756090feab95681af4"
+    "urn:uvci:01:lv:2fe41a1d6e5bde756090feab95681af4",
+    "urn:uvci:01:lv:41f712898d94a2299c0dcba692b08d70",
+    "URN:UVCI:01:LV:317E6D8216B994DFE4A66BFD1FB53082"
   ]
 }
