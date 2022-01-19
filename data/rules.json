@@ -1,5 +1,5 @@
 {
-  "version": "1.2.14",
+  "version": "1.2.15",
   "revisions": [
     {
       "roles": [
@@ -77,7 +77,7 @@
                   "hcert.v.mp=='EU/1/21/1529' and hcert.v.dt<='2021-10-10' and hcert.v.dn==1 and hcert.v.sd==2 and hcert.v.dt+'22d'<=external.validationClock and hcert.v.dt+'90d'>=external.validationClock and '2021-12-31'>=external.validationClock",
                   "hcert.v.mp=='EU/1/21/1529' and hcert.v.dn==2 and hcert.v.sd==2 and hcert.v.dt<='2021-12-31' and hcert.v.dt<=external.validationClock",
                   "hcert.v.vp=='Concilium'",
-                  "hcert.v.vp=='CovidVaccine'",
+                  "hcert.v.vp=='CovidVaccine' and hcert.v.dt<=external.validationClock and hcert.v.dt+'270d'>=external.validationClock",
                   "hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt+'15d'<=external.validationClock",
                   "hcert.v.dn>=hcert.v.sd and hcert.v.dn>=3 and hcert.v.dt<=external.validationClock",
                   "hcert.v.mp!='EU/1/20/1525' and hcert.v.dn==2 and hcert.v.sd==1 and hcert.v.dt<=external.validationClock",
@@ -193,7 +193,7 @@
                   "hcert.v.mp=='EU/1/21/1529' and hcert.v.dt<='2021-10-10' and hcert.v.dn==1 and hcert.v.sd==2 and hcert.v.dt+'22d'<=external.validationClock and hcert.v.dt+'90d'>=external.validationClock and '2021-12-31'>=external.validationClock",
                   "hcert.v.mp=='EU/1/21/1529' and hcert.v.dn==2 and hcert.v.sd==2 and hcert.v.dt<='2021-12-31' and hcert.v.dt<=external.validationClock",
                   "hcert.v.vp=='Concilium'",
-                  "hcert.v.vp=='CovidVaccine'",
+                  "hcert.v.vp=='CovidVaccine' and hcert.v.dt<=external.validationClock and hcert.v.dt+'270d'>=external.validationClock",
                   "hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt+'15d'<=external.validationClock",
                   "hcert.v.dn>=hcert.v.sd and hcert.v.dn>=3 and hcert.v.dt<=external.validationClock",
                   "hcert.v.mp!='EU/1/20/1525' and hcert.v.dn==2 and hcert.v.sd==1 and hcert.v.dt<=external.validationClock",
