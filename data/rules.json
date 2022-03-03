@@ -1,5 +1,5 @@
 {
-  "version": "1.2.16",
+  "version": "1.2.17",
   "revisions": [
     {
       "roles": [
@@ -45,6 +45,7 @@
                   "hcert.v.mp=='CORONAVAC'",
                   "hcert.v.mp=='Covaxin'",
                   "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'",
                   "hcert.v.vp=='Concilium'",
                   "hcert.v.vp=='CovidVaccine'"
                 ]
@@ -159,6 +160,7 @@
                   "hcert.v.mp=='CORONAVAC'",
                   "hcert.v.mp=='Covaxin'",
                   "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'",
                   "hcert.v.vp=='Concilium'",
                   "hcert.v.vp=='CovidVaccine'"
                 ]
@@ -289,6 +291,7 @@
                   "hcert.v.mp=='CORONAVAC'",
                   "hcert.v.mp=='Covaxin'",
                   "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'",
                   "hcert.v.vp=='Concilium'"
                 ]
               },
@@ -403,7 +406,8 @@
                   "hcert.v.mp=='CoronaVac'",
                   "hcert.v.mp=='CORONAVAC'",
                   "hcert.v.mp=='Covaxin'",
-                  "hcert.v.mp=='NVX-CoV2373'"
+                  "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'"
                 ]
               },
               {
