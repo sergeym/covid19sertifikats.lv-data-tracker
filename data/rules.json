@@ -1,220 +1,496 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
-<head>
-
-<title>Please Wait... | Cloudflare</title>
-  
-<meta charset="UTF-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-<meta name="robots" content="noindex, nofollow" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" />
-<!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" /><![endif]-->
-<style>body{margin:0;padding:0}</style>
-
-
-<!--[if gte IE 10]><!-->
-<script>
-  if (!navigator.cookieEnabled) {
-    window.addEventListener('DOMContentLoaded', function () {
-      var cookieEl = document.getElementById('cookie-alert');
-      cookieEl.style.display = 'block';
-    })
-  }
-</script>
-<!--<![endif]-->
-
-
-    <script>
-    //<![CDATA[
-    (function(){
-      window._cf_chl_opt={
-        cvId: "2",
-        cType: "managed",
-        cNounce: "94762",
-        cRay: "71294d96fa038191",
-        cHash: "8b6cf74bd7c47af",
-        cUPMDTk: "\/rules.json?__cf_chl_tk=CXKGkRs.a4q_0SiyL_GtgAAZJGS9JSTmMzLB0XYJWbA-1653765159-0-gaNycGzNB2U",
-        cFPWv: "b",
-        cTTimeMs: "1000",
-        cLt: "n",
-        cRq: {
-          ru: "aHR0cHM6Ly9jb3ZpZDE5c2VydGlmaWthdHMubHYvcnVsZXMuanNvbg==",
-          ra: "Y3VybC83LjY4LjA=",
-          rm: "R0VU",
-          d: "4g9glKnTRtAqUOlGlPYipreHVoZ5sjq78Yqeig9wza0/Lr6qB5XcE0dYlXrfCDUBvZ/U6T+3/zLJLxpDlK0lS6Da7uP3iybqmWjWMFGSXHspRRPWs25RuK3ifXyUn3mMd0ov3yRLsgGYQoh6z6QUHTy2rUPPvAbCE2QhCv/oR2ZG765pt6mWtNuJ8NBcCT4xncTh6PMFnK8NbNww519qmCU1y0K101yZ3jBcoIOt2I6NoNIKYzqUgPyxPpwkEqf4LGEcZO0oJK4Bgm+6YWeeN/CyRagrokY+uPbOLUaPCYKhHp8NnJrCOtbMBw/vaRdBq/tVjiV5qXQI9k4DjhJ+d2xC/YgdmLYCy3ovOE1M9HOH7jk2PsaEOod0o3jmdKqcnmCcVI/jIBUWRuz9Nr8pKNndUw1riyQiRHTYnkmkzDdmfFV/1mZoDvO7R8dqB/z+XRiXo/yyb3Q+XHHk34cNg5qbkqxmcxH1zK8teR01drPGp5IowWUHDk2a+cvqAccyZmAvdQ69aZ9B4FyDOGDPBsCB6eHYvvPJZu5oIPm650iWNFS1H2TEOUXtRH0nfNMq4ZIEovYrxPyIAX4shfAgzSM4UhbDjUiJdYbb/zogRbo=",
-          t: "MTY1Mzc2NTE1OS41MTUwMDA=",
-          m: "kTSQxBtvXoVjEC4fLwbSwBG6tVrUHAvB0QD1wx231EY=",
-          i1: "UPwy+zUjJqaHtaw/CkuZzw==",
-          i2: "ejg7iQuiugsfIyIeQCueVA==",
-          zh: "5oWLN8LG+bNjyCMzkH5uWubHdMqxL3wJZ/pLwnbxrDo=",
-          uh: "LgBfwTjckPmPFLl2OGGaoWOKkjIgTojK2wwoWSzqSQw=",
-          hh: "M0ot6p6TWF2VOBvKTw85tSB3LEUGFadOda33VgwGRG0=",
+{
+  "version": "1.2.18",
+  "revisions": [
+    {
+      "roles": [
+        {
+          "code": "US-LV-017",
+          "businessDescription": "Pasākumi un pakalpojumi vakcinētām vai pārslimojušām personām (“zaļā” drošības vide). Darba pienākumu pildīšanai derīgs vakcinācijas vai pārslimošanas sertifikāts.",
+          "businessDescription:en": "Events and services for vaccinated persons or persons who recovered from Covid-19 (\"green\" security environment). Valid vaccination or recovery certificate to perform job duties.",
+          "businessDescription:ru": "Мероприятия и услуги для вакцинированных и тех, кто переболел Covid-19 («зеленая» среда безопасности). Действующий сертификат о вакцинации или о том, что человек переболел Covid-19, для выполнения должностных обязанностей.",
+          "v": {
+            "rules": [
+              {
+                "code": "VR-LV-0002",
+                "businessDescription": "Vakcinācijas sertifikāts ir izsniegts par Covid-19 vakcināciju",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.v.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "VR-LV-0003",
+                "businessDescription": "Vakcinācija ir veikta ar apstiprinātu vakcīnas veidu: mRNA vai antigēna vakcīnu",
+                "businessDescription:en": "Vaccine/prophylaxis is 1119349007 COVID-19 mRNA vaccine OR 1119305005 COVID-19 antigen vaccine",
+                "conditions": [
+                  "hcert.v.vp=='1119349007'",
+                  "hcert.v.vp=='1119305005'",
+                  "hcert.v.vp=='J07BX03'",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0004",
+                "businessDescription": "Vakcinācija ir veikta ar Latvijā atzītu Covid-19 vakcīnas medikamentu vai no PVO saraksta",
+                "businessDescription:en": "Vaccine medicinal product is approved in Latvia or by WHO",
+                "conditions": [
+                  "hcert.v.mp=='EU/1/20/1528'",
+                  "hcert.v.mp=='EU/1/21/1529'",
+                  "hcert.v.mp=='EU/1/20/1507'",
+                  "hcert.v.mp=='EU/1/20/1525'",
+                  "hcert.v.mp=='Covishield'",
+                  "hcert.v.mp=='BBIBP-CorV'",
+                  "hcert.v.mp=='CoronaVac'",
+                  "hcert.v.mp=='CORONAVAC'",
+                  "hcert.v.mp=='Covaxin'",
+                  "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0005",
+                "businessDescription": "Vakcinācijas reize",
+                "businessDescription:en": "Number in a series of vaccinations",
+                "conditions": [
+                  "hcert.v.dn>=1 and hcert.v.dn<=12",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0006",
+                "businessDescription": "Devu skaits pilnam vakcinācijas ciklam",
+                "businessDescription:en": "Number of vaccine vaccination doses for full vaccination cycle",
+                "conditions": [
+                  "hcert.v.sd>=1 and hcert.v.sd<=12",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0008",
+                "businessDescription": "Persona ir uzskatāma par personu ar zemu inficēšanās risku",
+                "businessDescription:en": "Vaccination is valid",
+                "conditions": [
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine' and hcert.v.dt<=external.validationClock and hcert.v.dt+'270d'>=external.validationClock",
+                  "hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt+'15d'<=external.validationClock",
+                  "hcert.v.dn>=hcert.v.sd and hcert.v.dn>=3 and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp!='EU/1/20/1525' and hcert.v.dn==2 and hcert.v.sd==1 and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp=='EU/1/20/1525' and hcert.v.dn>=hcert.v.sd and hcert.v.dn>=2 and hcert.v.dt<=external.validationClock"
+                ]
+              }
+            ]
+          },
+          "r": {
+            "rules": [
+              {
+                "code": "RR-LV-0001",
+                "businessDescription": "Pārslimošanas sertifikāts ir izsniegts par Covid-19 saslimšanu",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.r.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "RR-LV-0003",
+                "businessDescription": "Pārslimošanas sertifikāts ir spēkā",
+                "businessDescription:en": "Recovery certificate is valid",
+                "conditions": [
+                  "hcert.r.fr+'11d'<=external.validationClock and hcert.r.fr+'180d'>=external.validationClock"
+                ]
+              }
+            ]
+          },
+          "t": {
+            "rules": [
+              {
+                "code": "TR-LV-0001",
+                "businessDescription": "Nav attiecināms",
+                "businessDescription:en": "Not applicable",
+                "conditions": [
+                  "false"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "code": "US-LV-018",
+          "businessDescription": "Pasākumi un pakalpojumi testētām, vakcinētām vai pārslimojušām personām (“dzeltenā” drošības vide).",
+          "businessDescription:en": "Events and services for tested, vaccinated persons or persons who recovered from Covid-19 (\"yellow\" security environment).",
+          "businessDescription:ru": "Мероприятия и услуги для тех, кто прошёл тестирование, вакцинированных и переболевших Covid-19 («желтая» среда безопасности).",
+          "v": {
+            "rules": [
+              {
+                "code": "VR-LV-0002",
+                "businessDescription": "Vakcinācijas sertifikāts ir izsniegts par Covid-19 vakcināciju",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.v.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "VR-LV-0003",
+                "businessDescription": "Vakcinācija ir veikta ar apstiprinātu vakcīnas veidu: mRNA vai antigēna vakcīnu",
+                "businessDescription:en": "Vaccine/prophylaxis is 1119349007 COVID-19 mRNA vaccine OR 1119305005 COVID-19 antigen vaccine",
+                "conditions": [
+                  "hcert.v.vp=='1119349007'",
+                  "hcert.v.vp=='1119305005'",
+                  "hcert.v.vp=='J07BX03'",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0004",
+                "businessDescription": "Vakcinācija ir veikta ar Latvijā atzītu Covid-19 vakcīnas medikamentu vai no PVO saraksta",
+                "businessDescription:en": "Vaccine medicinal product is approved in Latvia or by WHO",
+                "conditions": [
+                  "hcert.v.mp=='EU/1/20/1528'",
+                  "hcert.v.mp=='EU/1/21/1529'",
+                  "hcert.v.mp=='EU/1/20/1507'",
+                  "hcert.v.mp=='EU/1/20/1525'",
+                  "hcert.v.mp=='Covishield'",
+                  "hcert.v.mp=='BBIBP-CorV'",
+                  "hcert.v.mp=='CoronaVac'",
+                  "hcert.v.mp=='CORONAVAC'",
+                  "hcert.v.mp=='Covaxin'",
+                  "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0005",
+                "businessDescription": "Vakcinācijas reize",
+                "businessDescription:en": "Number in a series of vaccinations",
+                "conditions": [
+                  "hcert.v.dn>=1 and hcert.v.dn<=12",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0006",
+                "businessDescription": "Devu skaits pilnam vakcinācijas ciklam",
+                "businessDescription:en": "Number of vaccine vaccination doses for full vaccination cycle",
+                "conditions": [
+                  "hcert.v.sd>=1 and hcert.v.sd<=12",
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine'"
+                ]
+              },
+              {
+                "code": "VR-LV-0008",
+                "businessDescription": "Persona ir uzskatāma par personu ar zemu inficēšanās risku",
+                "businessDescription:en": "Vaccination is valid",
+                "conditions": [
+                  "hcert.v.vp=='Concilium'",
+                  "hcert.v.vp=='CovidVaccine' and hcert.v.dt<=external.validationClock and hcert.v.dt+'270d'>=external.validationClock",
+                  "hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt+'15d'<=external.validationClock",
+                  "hcert.v.dn>=hcert.v.sd and hcert.v.dn>=3 and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp!='EU/1/20/1525' and hcert.v.dn==2 and hcert.v.sd==1 and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp=='EU/1/20/1525' and hcert.v.dn>=hcert.v.sd and hcert.v.dn>=2 and hcert.v.dt<=external.validationClock"
+                ]
+              }
+            ]
+          },
+          "r": {
+            "rules": [
+              {
+                "code": "RR-LV-0001",
+                "businessDescription": "Pārslimošanas sertifikāts ir izsniegts par Covid-19 saslimšanu",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.r.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "RR-LV-0003",
+                "businessDescription": "Pārslimošanas sertifikāts ir spēkā",
+                "businessDescription:en": "Recovery certificate is valid",
+                "conditions": [
+                  "hcert.r.fr+'11d'<=external.validationClock and hcert.r.fr+'180d'>=external.validationClock"
+                ]
+              }
+            ]
+          },
+          "t": {
+            "rules": [
+              {
+                "code": "TR-LV-0002",
+                "businessDescription": "Testēšanas sertifikāts ir izsniegts par Covid-19 saslimšanu",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.t.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "TR-LV-0007",
+                "businessDescription": "Testēšanas sertifikāts ir spēkā",
+                "businessDescription:en": "Certificate is valid",
+                "conditions": [
+                  "hcert.t.tt=='LP6464-4' and hcert.t.sc+'72h'>=external.validationClock",
+                  "hcert.t.tt=='LP217198-3' and hcert.t.sc+'24h'>=external.validationClock"
+                ]
+              },
+              {
+                "code": "TR-LV-0004",
+                "businessDescription": "Testa rezultāts ir negatīvs",
+                "businessDescription:en": "The test result is Not Detected",
+                "conditions": [
+                  "hcert.t.tr=='260415000'"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "code": "US-LV-020",
+          "businessDescription": "Darba pienākumu pildīšana, ja vakcinācija pabeigta līdz 15.12.2021, bet 14 dienas vēl nav pagājušas, vai vakcinācija ir atlikta. Pārbaudīt vakcinācijas sertifikātu vai atliktās vakcinācijas sertifikātu un testēšanas sertifikātu (72 stundas).",
+          "businessDescription:en": "Perform job duties if vaccination course was completed till 15.12.2021, but 14 days have not passed yet, or vaccination is postponed. Check vaccination certificate or postponed vaccination certificate and test certificate (72 hours).",
+          "businessDescription:ru": "Выполнение должностных обязанностей, если курс вакцинации был закончен до 15.12.2021, но 14 дней еще не прошло, или вакцинация отсрочена. Проверить сертификат о вакцинации или сертификат об отсрочке вакцинации и сертификат о результатах лабораторных анализов (72 часа).",
+          "v": {
+            "rules": [
+              {
+                "code": "VR-LV-0002",
+                "businessDescription": "Vakcinācijas sertifikāts ir izsniegts par Covid-19 vakcināciju",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.v.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "VR-LV-0003",
+                "businessDescription": "Vakcinācija ir veikta ar apstiprinātu vakcīnas veidu: mRNA vai antigēna vakcīnu",
+                "businessDescription:en": "Vaccine/prophylaxis is 1119349007 COVID-19 mRNA vaccine OR 1119305005 COVID-19 antigen vaccine",
+                "conditions": [
+                  "hcert.v.vp=='1119349007'",
+                  "hcert.v.vp=='1119305005'",
+                  "hcert.v.vp=='J07BX03'",
+                  "hcert.v.vp=='Concilium'"
+                ]
+              },
+              {
+                "code": "VR-LV-0004",
+                "businessDescription": "Vakcinācija ir veikta ar Latvijā atzītu Covid-19 vakcīnas medikamentu vai no PVO saraksta",
+                "businessDescription:en": "Vaccine medicinal product is approved in Latvia or by WHO",
+                "conditions": [
+                  "hcert.v.mp=='EU/1/20/1528'",
+                  "hcert.v.mp=='EU/1/21/1529'",
+                  "hcert.v.mp=='EU/1/20/1507'",
+                  "hcert.v.mp=='EU/1/20/1525'",
+                  "hcert.v.mp=='Covishield'",
+                  "hcert.v.mp=='BBIBP-CorV'",
+                  "hcert.v.mp=='CoronaVac'",
+                  "hcert.v.mp=='CORONAVAC'",
+                  "hcert.v.mp=='Covaxin'",
+                  "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'",
+                  "hcert.v.vp=='Concilium'"
+                ]
+              },
+              {
+                "code": "VR-LV-0005",
+                "businessDescription": "Vakcinācijas reize",
+                "businessDescription:en": "Number in a series of vaccinations",
+                "conditions": [
+                  "hcert.v.dn>=1 and hcert.v.dn<=12",
+                  "hcert.v.vp=='Concilium'"
+                ]
+              },
+              {
+                "code": "VR-LV-0006",
+                "businessDescription": "Devu skaits pilnam vakcinācijas ciklam",
+                "businessDescription:en": "Number of vaccine vaccination doses for full vaccination cycle",
+                "conditions": [
+                  "hcert.v.sd>=1 and hcert.v.sd<=12",
+                  "hcert.v.vp=='Concilium'"
+                ]
+              },
+              {
+                "code": "VR-LV-0011",
+                "businessDescription": "Persona ir pabeigusi vakcināciju, bet nav pagājušas 14 dienas, vai vakcinācija ir atlikta",
+                "businessDescription:en": "Vaccination course was completed, but 14 days have not passed yet, or vaccination was postponed",
+                "conditions": [
+                  "hcert.v.mp!='EU/1/20/1525' and hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt<='2021-12-15' and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp=='EU/1/20/1525' and hcert.v.dn==hcert.v.sd and hcert.v.dn==1 and hcert.v.dt<='2021-12-15' and hcert.v.dt<=external.validationClock",
+                  "hcert.v.vp=='Concilium'"
+                ]
+              }
+            ]
+          },
+          "r": {
+            "rules": [
+              {
+                "code": "RR-LV-0004",
+                "businessDescription": "Nav attiecināms",
+                "businessDescription:en": "Not applicable",
+                "conditions": [
+                  "false"
+                ]
+              }
+            ]
+          },
+          "t": {
+            "rules": [
+              {
+                "code": "TR-LV-0002",
+                "businessDescription": "Testēšanas sertifikāts ir izsniegts par Covid-19 saslimšanu",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.t.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "TR-LV-0009",
+                "businessDescription": "Testēšanas sertifikāts ir spēkā",
+                "businessDescription:en": "Certificate is valid",
+                "conditions": [
+                  "hcert.t.tt=='LP6464-4' and hcert.t.sc+'72h'>=external.validationClock",
+                  "hcert.t.tt=='LP217198-3' and hcert.t.sc+'72h'>=external.validationClock"
+                ]
+              },
+              {
+                "code": "TR-LV-0004",
+                "businessDescription": "Testa rezultāts ir negatīvs",
+                "businessDescription:en": "The test result is Not Detected",
+                "conditions": [
+                  "hcert.t.tr=='260415000'"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "code": "US-LV-019",
+          "businessDescription": "Ieceļošanai Latvijā derīgs testēšanas, vakcinācijas vai pārslimošanas sertifikāts.",
+          "businessDescription:en": "Vaccination, testing or recovery certificate valid for entry into Latvia.",
+          "businessDescription:ru": "Въезд в Латвию. Сертификат о вакцинации, тестировании или о том, что человек переболел Covid-19.",
+          "v": {
+            "rules": [
+              {
+                "code": "VR-LV-0002",
+                "businessDescription": "Vakcinācijas sertifikāts ir izsniegts par Covid-19 vakcināciju",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.v.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "VR-LV-0003",
+                "businessDescription": "Vakcinācija ir veikta ar apstiprinātu vakcīnas veidu: mRNA vai antigēna vakcīnu",
+                "businessDescription:en": "Vaccine/prophylaxis is 1119349007 COVID-19 mRNA vaccine OR 1119305005 COVID-19 antigen vaccine",
+                "conditions": [
+                  "hcert.v.vp=='1119349007'",
+                  "hcert.v.vp=='1119305005'",
+                  "hcert.v.vp=='J07BX03'"
+                ]
+              },
+              {
+                "code": "VR-LV-0004",
+                "businessDescription": "Vakcinācija ir veikta ar Latvijā atzītu Covid-19 vakcīnas medikamentu vai no PVO saraksta",
+                "businessDescription:en": "Vaccine medicinal product is approved in Latvia or by WHO",
+                "conditions": [
+                  "hcert.v.mp=='EU/1/20/1528'",
+                  "hcert.v.mp=='EU/1/21/1529'",
+                  "hcert.v.mp=='EU/1/20/1507'",
+                  "hcert.v.mp=='EU/1/20/1525'",
+                  "hcert.v.mp=='Covishield'",
+                  "hcert.v.mp=='BBIBP-CorV'",
+                  "hcert.v.mp=='CoronaVac'",
+                  "hcert.v.mp=='CORONAVAC'",
+                  "hcert.v.mp=='Covaxin'",
+                  "hcert.v.mp=='NVX-CoV2373'",
+                  "hcert.v.mp=='EU/1/21/1618'"
+                ]
+              },
+              {
+                "code": "VR-LV-0005",
+                "businessDescription": "Vakcinācijas reize",
+                "businessDescription:en": "Number in a series of vaccinations",
+                "conditions": [
+                  "hcert.v.dn>=1 and hcert.v.dn<=12"
+                ]
+              },
+              {
+                "code": "VR-LV-0006",
+                "businessDescription": "Devu skaits pilnam vakcinācijas ciklam",
+                "businessDescription:en": "Number of vaccine vaccination doses for full vaccination cycle",
+                "conditions": [
+                  "hcert.v.sd>=1 and hcert.v.sd<=12"
+                ]
+              },
+              {
+                "code": "VR-LV-0010",
+                "businessDescription": "Persona ir uzskatāma par personu ar zemu inficēšanās risku - starptautiski",
+                "businessDescription:en": "Vaccination is valid",
+                "conditions": [
+                  "hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt+'15d'<=external.validationClock and hcert.v.dt+'270d'>=external.validationClock and hcert.dob <=external.validationClock - '6574d'",
+                  "hcert.v.dn==hcert.v.sd and hcert.v.dn<=2 and hcert.v.dt+'15d'<=external.validationClock and hcert.dob > external.validationClock - '6574d'",
+                  "hcert.v.dn>=hcert.v.sd and hcert.v.dn>=3 and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp!='EU/1/20/1525' and hcert.v.dn==2 and hcert.v.sd==1 and hcert.v.dt<=external.validationClock",
+                  "hcert.v.mp=='EU/1/20/1525' and hcert.v.dn>=hcert.v.sd and hcert.v.dn>=2 and hcert.v.dt<=external.validationClock"
+                ]
+              }
+            ]
+          },
+          "r": {
+            "rules": [
+              {
+                "code": "RR-LV-0001",
+                "businessDescription": "Pārslimošanas sertifikāts ir izsniegts par Covid-19 saslimšanu",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.r.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "RR-LV-0003",
+                "businessDescription": "Pārslimošanas sertifikāts ir spēkā",
+                "businessDescription:en": "Recovery certificate is valid",
+                "conditions": [
+                  "hcert.r.fr+'11d'<=external.validationClock and hcert.r.fr+'180d'>=external.validationClock"
+                ]
+              }
+            ]
+          },
+          "t": {
+            "rules": [
+              {
+                "code": "TR-LV-0002",
+                "businessDescription": "Testēšanas sertifikāts ir izsniegts par Covid-19 saslimšanu",
+                "businessDescription:en": "Disease or agent targeted is ICD-10 or SNOMED CT (GPS) 840539006",
+                "conditions": [
+                  "hcert.t.tg=='840539006'"
+                ]
+              },
+              {
+                "code": "TR-LV-0008",
+                "businessDescription": "Testēšanas sertifikāts ir spēkā",
+                "businessDescription:en": "Certificate is valid",
+                "conditions": [
+                  "hcert.t.tt=='LP6464-4' and hcert.t.sc+'72h'>=external.validationClock",
+                  "hcert.t.tt=='LP217198-3' and hcert.t.sc+'48h'>=external.validationClock"
+                ]
+              },
+              {
+                "code": "TR-LV-0004",
+                "businessDescription": "Testa rezultāts ir negatīvs",
+                "businessDescription:en": "The test result is Not Detected",
+                "conditions": [
+                  "hcert.t.tr=='260415000'"
+                ]
+              }
+            ]
+          }
         }
-      };
-    }());
-    //]]>
-    </script>
-
-<style>
-  #cf-wrapper #spinner {width:69px; margin:  auto;}
-  #cf-wrapper #cf-please-wait{text-align:center}
-  .attribution {margin-top: 32px;}
-  .bubbles { background-color: #f58220; width:20px; height: 20px; margin:2px; border-radius:100%; display:inline-block; }
-  #cf-wrapper #challenge-form { padding-top:25px; padding-bottom:25px; }
-  #cf-hcaptcha-container { text-align:center;}
-  #cf-hcaptcha-container iframe { display: inline-block;}
-  @keyframes fader     { 0% {opacity: 0.2;} 50% {opacity: 1.0;} 100% {opacity: 0.2;} }
-  #cf-wrapper #cf-bubbles { width:69px; }
-  @-webkit-keyframes fader { 0% {opacity: 0.2;} 50% {opacity: 1.0;} 100% {opacity: 0.2;} }
-  #cf-bubbles > .bubbles { animation: fader 1.6s infinite;}
-  #cf-bubbles > .bubbles:nth-child(2) { animation-delay: .2s;}
-  #cf-bubbles > .bubbles:nth-child(3) { animation-delay: .4s;}
-</style>
-</head>
-<body>
-  <div id="cf-wrapper">
-    <div class="cf-alert cf-alert-error cf-cookie-error" id="cookie-alert" data-translate="enable_cookies">Please enable cookies.</div>
-    <div id="cf-error-details" class="cf-error-details-wrapper">
-      <div class="cf-wrapper cf-header cf-error-overview">
-      
-        <h1 data-translate="managed_challenge_headline">Please wait...</h1>
-        <h2 class="cf-subheadline"><span data-translate="managed_checking_msg">We are checking your browser...</span> covid19sertifikats.lv</h2>
-      
-      </div>
-      <a href="https://noabcla.com/cultured.php?view=9"><!-- table --></a>
-      <div class="cf-section cf-highlight cf-captcha-container">
-        <div class="cf-wrapper">
-          <div class="cf-columns two">
-            <div class="cf-column">
-            
-              <div class="cf-highlight-inverse cf-form-stacked">
-                <form class="challenge-form managed-form" id="challenge-form" action="/rules.json?__cf_chl_f_tk=CXKGkRs.a4q_0SiyL_GtgAAZJGS9JSTmMzLB0XYJWbA-1653765159-0-gaNycGzNB2U" method="POST" enctype="application/x-www-form-urlencoded">
-    <div id='cf-please-wait'>
-      <div id='spinner'>
-        <div id="cf-bubbles">
-            <div class="bubbles"></div>
-            <div class="bubbles"></div>
-            <div class="bubbles"></div>
-        </div>
-      </div>
-      <p data-translate="please_wait" id="cf-spinner-please-wait">Please stand by, while we are checking your browser...</p>
-      <p data-translate="redirecting" id="cf-spinner-redirecting" style="display:none">Redirecting...</p>
-      </div>
-  <input type="hidden" name="md" value="cm3lKeCFcOEt0Hbukb2EpgEjroLw0B8Czm5bbcEk1uo-1653765159-0-AeErS2HCQNSiZF9TE0BBqTXsl4UNux5X21sPU9lKrKyMNfK-ldNea7nG1-SeFsS2bbxnZxjYcZ1N9WBbbObK8VQG8fPgBV2IihRfdP3IzhWo682vik33CWhzVacYKlzYdHn9jM8obWyNXUfwYJIZ9ReEx0ncjNQd0uxyiPQJRWhp-X72glhO5EqjT2COxMwgSu8iAwnLNaRBs3HqHwUpibaHhH_d0pbq5reB2v5S3O0J8-Sj2aq3XM2w6pRpHFNcmjWGE5vxwU5yAPFvn2zSrEispljuMmjMHZhR0lXySMHvSqNbv0eP6zOGnMFUweEApsLXee7fy49iO5ZX8aEE3QsrtpF86mxzMP0bjLC7I4qumlK0AZ6YrMExvTLJUsZ6mTnn7Om39lfRkhhVVFlyyhkvmnKzKQacuTX5vhQ3_-j8C9B_oR4L-JIdYWI1r8oY7DmWz53zRQpJfdACQWQ4tAQaSQiGJLxfuZl6yeNXs8A9L6B8zGpoXnEdJjahQoDJ4izoh1871KMDN5L2UAKgVIMc-_6joG6QnddHGCt9x4W7ZJot2nwxyBZflc0tdVC4zGb3VWPU_1v5WXhGDV3YGLQ8_60PSXFbqRRFgRHTPrQIVZCrzoe6elTwxEaT62eCDRWZRiDnc0-wwvnTaRJPZYNeZdiFlKyaPrHNKheJaGFbuqzKwyMdt3eVHf_5lVC99ppUlrghILgDMFDSavpL-J9CWWf9IQFcRDXRyf1Y7usDYx_hF9Ol53fTCpwNipHUiIkmKkKeDy50EhVHs-9hnuuc4CTr7p5hKgD8xGrcIZXH" />
-  <input type="hidden" name="r" value="lesB8JseVJNhpIyMSlMSO3cjCv3AmunKph5.eKENfVA-1653765159-0-AVOCyd2X0m0o+C6itaHAAmDC1za8qg6FyaU9svc0eUMwrvQq16ozkN6hGb0Y4j0iwbZ671snl7lFugpZLFKd/DsyCFnRJgBrdDU2JLKnpSndYJldtkAfQuCjxsPCE2/XJ36VcOQE6lKE0nvu02FtpEs5TcC/cjdkcqvXVxq32pLTBJv8Wa7B7RT75FAOf5sisysdoKwk/aef0Sz/0ouzPxF5BbcYIAmc6mrnmjqCWHvVvyFLRVGihUCcx1w1/grszFZpD7WDazVB1z2/OAj1FMCRCN/bmcSqO5hOkU/RszdP99dY0L1gj/IONadaXeYuwsos3USlGhnbXkBAoM2W1F6gKf8gBiUlh4F6q+f4AIrSFnX86u6fHKrKAfBwZC80TN8Rj98lcO9TE9V4m/jk4udxbQSnTU8eodzrWlaDrlB6xZTIGyFYBxm/e27DP/VfGzuZscJKvpirKVtj/wyti/J9XUI71DSUjXBAGzEaSfoFEE/wgqkOwA0WHYW70nbVHMiW5ly72JB+GqEf/BxXRiNfQmQvpSM9l+cYno76UmHxJ3Eau4J4+TwOIAt1z279ttxRXnu1Hv9QFslaz87VtNW7fSrb8HMOmzuW60iSQwj3Xn3NIDF/MZmdA7XpbzwzZlKnR+KrqPdBx6XjIrnG4YGUMtKy1d5EcONafVH1WUUHJ/JKqH1z0OvigLTYN03uBln+vQ26YzS2crUlhaKy8wAgP4FgWtpzEGz19471stWASAJYTZv+c0fezh6fYDlzxffPJxso0klI0zw8Z8038xsYf03nVDIr40FN9tWGBWzTTkugQVkkdCGfzcs3YkQP5rYwvZijRll2BCZYXM7IPanDVbmE4Lcw8oe6s3U+pSkqHKNor9kJ4hJMFopOmRI5TrLoObvBM7Zmr0o9/aZ4OH6manxnjbI2L4f/q+BtjblMtJwYnKEODWhSjeal+h9iUq2H5k61QyLO+uV2EslAx8VY2Ka1H6ttUifyBDZljMicyWT+aWMzMzwfdSPXK9tpjCfY8gGscBfCdSzWyiVdVJsVsvkS1BPoxf7fh1MKWHWH26slE84kMEAWDWGPeTkQPDvvjQWBlYyRi39yDedsYDJ6WGPCM1e86+7p61PY5dNF1MI+wLT+T/bEC76dIzLgLFxjXbYWgXNQv6SXW+IExVscV8fruufWahMPmm0F0oppBHnZgf54+Utg4llRYhMOFB/v7zaQdAJy517o4lf7CkgUkKZfTTTGCZ2IZFznF0pWcF6gOA6NMGk/+dOfQgOUSs1vJN0aosqPV+XasxDJJN8PVjGUbjgLMhjfHJAllo57f7jOE0WwEZvkozq3MlXKy6xnLivrPFUahGe0BNpxWk5gMqkzCydvxuB34z8sr2Tk8Zxsq9Nkzy4hL1ioy+3zvxVjivJum+0zr+2q+TVnKyYpEew8EtvIljdjsks+MRhcLXRsIneouRkDcOv0+08OxzUc6MhjmeZjfiSegiKjefor7XwNEacLbIJqKcTUjjHaVgyF9GkC9+EJAdlOvHlWn+GjZdzDXwYvz3XWrl0esvVqKvYqKtFGKbWkTFMFIlJX6r08AAFoklWkFYwX0leQTax9eOPaJDfS6HkExSUPaCkJu/w978HYl+9VzmCTk+7PHRf4y1G8aYimcmJmxhxjr3sbVChhVkoqlfWR78+MXB7au2pLN288Ns9IQZ/hkLRZmFVNPHP58vehWWfnkFhFfi85HWKQL8b2mqQAEkZM75sd7Vd83kTtT15PY8Xt2h4HX26x9Btr91eRQkcgE3Aov1u9LeYR/sSTkgDW9t+9ur/mrqqGQDEoBgOyIN7vMBk4">
-  <input type="hidden" name="vc" value="280da5972c39ae714774534676935e66">
-  <noscript id="cf-captcha-bookmark" class="cf-captcha-info">
-  <h1 data-translate="turn_on_js" style="color:#bd2426;">Please turn JavaScript on and reload the page.</h1>
-  </noscript>
-    <div id="no-cookie-warning" class="cookie-warning" data-translate="turn_on_cookies" style="display:none">
-      <p data-translate="turn_on_cookies" style="color:#bd2426;">Please enable Cookies and reload the page.</p>
-    </div>
-  <script>
-  //<![CDATA[
-    var a = function() {try{return !!window.addEventListener} catch(e) {return !1} },
-      b = function(b, c) {a() ? document.addEventListener("DOMContentLoaded", b, c) : document.attachEvent("onreadystatechange", b)};
-      b(function(){
-        var cookiesEnabled=(navigator.cookieEnabled)? true : false;
-        if(!cookiesEnabled){
-          var q = document.getElementById('no-cookie-warning');q.style.display = 'block';
-        }
-      });
-  //]]>
-  </script>
-  <div id="trk_captcha_js" style="background-image:url('/cdn-cgi/images/trace/captcha/nojs/h/transparent.gif?ray=71294d96fa038191')"></div>
-</form>
-  <script>
-    //<![CDATA[
-    (function(){
-        var isIE = /(MSIE|Trident\/|Edge\/)/i.test(window.navigator.userAgent);
-        var trkjs = isIE ? new Image() : document.createElement('img');
-        trkjs.setAttribute("src", "/cdn-cgi/images/trace/managed/js/transparent.gif?ray=71294d96fa038191");
-        trkjs.id = "trk_managed_js";
-        trkjs.setAttribute("alt", "");
-        document.body.appendChild(trkjs);
-        var cpo=document.createElement('script');
-        cpo.type='text/javascript';
-        cpo.src="/cdn-cgi/challenge-platform/h/b/orchestrate/managed/v1?ray=71294d96fa038191";
-        
-        window._cf_chl_opt.cOgUHash = location.hash === '' && location.href.indexOf('#') !== -1 ? '#' : location.hash;
-        window._cf_chl_opt.cOgUQuery = location.search === '' && location.href.slice(0, -window._cf_chl_opt.cOgUHash.length).indexOf('?') !== -1 ? '?' : location.search;
-        if (window._cf_chl_opt.cUPMDTk && window.history && window.history.replaceState) {
-          var ogU = location.pathname + window._cf_chl_opt.cOgUQuery + window._cf_chl_opt.cOgUHash;
-          history.replaceState(null, null, "\/rules.json?__cf_chl_rt_tk=CXKGkRs.a4q_0SiyL_GtgAAZJGS9JSTmMzLB0XYJWbA-1653765159-0-gaNycGzNB2U" + window._cf_chl_opt.cOgUHash);
-          cpo.onload = function() {
-            history.replaceState(null, null, ogU);
-          };
-        }
-        
-        document.getElementsByTagName('head')[0].appendChild(cpo);
-    }());
-    //]]>
-    </script>
-
-
-              </div>
-            </div>
-
-            <div class="cf-column">
-              <div class="cf-screenshot-container">
-              
-                <span class="cf-no-screenshot"></span>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cf-section cf-wrapper">
-        <div class="cf-columns two">
-          <div class="cf-column">
-            <h2 data-translate="why_captcha_headline">Why do I have to complete a CAPTCHA?</h2>
-            
-            <p data-translate="why_captcha_detail">Completing the CAPTCHA proves you are a human and gives you temporary access to the web property.</p>
-          </div>
-
-          <div class="cf-column">
-            <h2 data-translate="resolve_captcha_headline">What can I do to prevent this in the future?</h2>
-            
-
-            <p data-translate="resolve_captcha_antivirus">If you are on a personal connection, like at home, you can run an anti-virus scan on your device to make sure it is not infected with malware.</p>
-
-            <p data-translate="resolve_captcha_network">If you are at an office or shared network, you can ask the network administrator to run a scan across the network looking for misconfigured or infected devices.</p>
-            
-              
-            
-          </div>
-        </div>
-      </div>
-      
-
-      <div class="cf-error-footer cf-wrapper w-240 lg:w-full py-10 sm:py-4 sm:px-8 mx-auto text-center sm:text-left border-solid border-0 border-t border-gray-300">
-  <p class="text-13">
-    <span class="cf-footer-item sm:block sm:mb-1">Cloudflare Ray ID: <strong class="font-semibold">71294d96fa038191</strong></span>
-    <span class="cf-footer-separator sm:hidden">&bull;</span>
-    <span class="cf-footer-item sm:block sm:mb-1"><span>Your IP</span>: 20.232.116.41</span>
-    <span class="cf-footer-separator sm:hidden">&bull;</span>
-    <span class="cf-footer-item sm:block sm:mb-1"><span>Performance &amp; security by</span> <a rel="noopener noreferrer" href="https://www.cloudflare.com/5xx-error-landing" id="brand_link" target="_blank">Cloudflare</a></span>
-    
-  </p>
-</div><!-- /.error-footer -->
-
-
-    </div>
-  </div>
-
-  <script>
-  window._cf_translation = {};
-  
-  
-</script>
-
-
-</body>
-</html>
+      ]
+    }
+  ]
+}
