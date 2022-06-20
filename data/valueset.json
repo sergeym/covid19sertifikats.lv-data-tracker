@@ -1,6 +1,8 @@
 {
   "certificateDenyList": [
+    "urn:uvci:01:lv:962a80d86928719a4f1e7f73a25e2231",
     "urn:uvci:01:lv:5c96b57aae9941d59455e3e0804a1efb",
+    "urn:uvci:01:lv:8712a7d8fb13f836abbc83e36afd605b",
     "urn:uvci:01:lv:a807aa92d64c2d2e65d2f71321528568",
     "urn:uvci:01:lv:5d39bffe25f7ffbdf45df88d3f08d71d",
     "urn:uvci:01:lv:fa3d5c3a847c57ea050e0c143a4d1360",
