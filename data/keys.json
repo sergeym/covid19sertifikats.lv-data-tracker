@@ -1,46 +1,279 @@
-{
-  "845a58ff248eaf02": [
-    {
-      "kty": "EC",
-      "crv": "P-256",
-      "x": "PUwE7htr-kD1eVnJBfRf5tx0kA17qu4p1wRz3EKPxsI",
-      "y": "csiM5yKq_fh7JzHe5PSA_39HXqoz_Hbpc0tnBa1VZxU",
-      "nbf": 1622220600,
-      "exp": 1685292600,
-      "extensions": []
-    }
-  ],
-  "32b4f4d26843c4b4": [
-    {
-      "kty": "EC",
-      "crv": "P-256",
-      "x": "5_m2YdN8L81Ajoi-2brFJbul628alfXRXU26t7hRYEs",
-      "y": "77G--LUlZtg5vXG7oa4BSfv8F3nHcYdLU0hwpDHwdIU",
-      "nbf": 1624985695,
-      "exp": 1688057695,
-      "extensions": []
-    }
-  ],
-  "27ca7da5ffb9ffd3": [
-    {
-      "kty": "EC",
-      "crv": "P-256",
-      "x": "6aTLMp6-apBgDNYyDeBS-BranY97xhfHhRYV-_D6WsA",
-      "y": "gSfd1gp3br-2LEhY-DRn_8aCcp8XnJGEd_iYWAb3Tsg",
-      "nbf": 1636018245,
-      "exp": 1699090245,
-      "extensions": []
-    }
-  ],
-  "cc2fdbc7ee772a74": [
-    {
-      "kty": "EC",
-      "crv": "P-256",
-      "x": "zRFWJfk71FTCVtpRBsLReqdCi0x4mTeslf2Y68RMCO0",
-      "y": "HfgNCUX8QWKNTydLmb_HffMiiuXRDzTt1L3J2BVkrEk",
-      "nbf": 1637828406,
-      "exp": 1700900406,
-      "extensions": []
-    }
-  ]
+
+
+<html lang="lv"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Digit&#257;lais Covid-19 sertifik&#257;ts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
+    <meta name="description" content="&#352;aj&#257; t&#299;mek&#316;vietn&#275; J&#363;s varat apskat&#299;t savus digit&#257;los za&#316;os sertifik&#257;tus, kas ir izveidoti Latvijas Republik&#257;. Pieejami tr&#299;s veidu sertifik&#257;ti - sertifik&#257;ts par veikto vakcin&#257;ciju pret Covid-19, sertifik&#257;ts par Covid-19 laboratorisko anal&#299;&#382;u rezult&#257;tiem un sertifik&#257;ts par Covid-19 izslimo&#353;anas faktu.">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="general">
+
+    <meta name="theme-color" content="#fff">
+    <style>
+:root {
+    --theme-color: #178935;
+    --hover-color: #136E2B;
+    --background-color: #fff;
+    --value-background-color: #f4f4f4;
+    --data-color: #161616;
+    --value-hover-color:#e5e5e5;
+
+    --column-width: 960px;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ul {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style-type: disc;
+}
+
+#main-header .logo label {
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 600;
+    color: var(--theme-color);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+header#main-header {
+    height: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background-color:var(--background-color);
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    border-bottom: 1px solid var(--value-background-color);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.05);
+}
+header#main-header .container {
+    width: var(--column-width);
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    color: var(--theme-color);
+    text-decoration: none;
+    cursor: pointer;
+    height: 100px;
+    padding: 0 1rem 0 1rem;;
+    margin-left: 0;
+    text-transform: uppercase;
+}
+.logo img {
+    height: 65px;
+    width: 80px;
+    margin-right: 4px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 150px;
+}
+main {
+    display:flex;
+    justify-content: center;
+    margin-top:100px;
+    min-height: 100vh;
+}
+main .content {
+    width: var(--column-width);
+}
+
+
+body.index #main-header .logo label {
+    display: none;
+}
+body.index #main-header .logo {
+    padding: 0 1rem 0 1rem;
+}
+
+
+footer {
+    display:flex;
+    justify-content: center;
+    background-color: var(--data-color);
+    margin-top: 3rem;
+    min-height: 300px;
+}
+footer .container {
+    width: var(--column-width);
+    padding: 3rem 0rem;
+    color: var(--value-background-color);
+    display: flex;
+}
+
+footer .column {
+    width: calc(var(--column-width) / 3);
+    padding: 1rem;
+    font-size: 0.9rem;
+    flex-shrink:0;
+}
+
+footer .column a {
+    display: flex;
+    color: var(--background-color);
+    margin-bottom: 0.5rem;
+    align-items: center;
+    line-height: 1.5em;
+}
+footer .column a:hover {
+    color: var(--value-hover-color);
+}
+footer .column a svg {
+    height: 0.9rem;
+    width: 0.9rem;
+    margin-top:5px;
+    margin-right: 4px;
+    flex-shrink:0;
+    align-self:flex-start;
+}
+footer .column p {
+    margin-top:0;
+    margin-bottom:0;
+    font-size: 0.8rem;
+    line-height: 1.3em;
+    color: #c2c2c2;
+}
+footer .column.info-column p {
+    color: #fff;
+    font-size: 0.9rem;
+}
+.container a {
+    color: var(--theme-color);
+}
+.container a:hover {
+    color: var(--hover-color);
+}
+.separator {
+    height: 1rem;
+    width: 1rem;
+}
+@media (max-width: 1000px) {
+
+    footer .column a {
+        min-height: 48px;
+        margin-bottom: 0;
+    }
+    footer .column {
+        padding-top:0;
+        padding-bottom: 0;
+    }
+    footer .column a svg {
+        align-self: center;
+        margin-right: 8px;
+    }
+    footer .separator {
+        height: 0;
+    }
+    footer .column p {
+        margin-top: 1rem;
+    }
+    footer .column p.small-special {
+        margin-bottom: 3rem;
+    }
+    footer p + a {
+        margin-top: -0.5rem;
+    }
+    footer {
+        width: 100%;
+    }
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 1rem;
+    }
+    footer .container .column {
+        width: 100%;
+    }
+    footer .column:first-of-type {
+        padding-left: inherit;
+    }
+}
+    </style>
+</head>
+
+
+<body class="">
+
+<header id="main-header">
+    <div class="container">
+        <div class="logo">
+            <img src="data:image/gif;base64,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" alt="logo">
+            <label>
+                <strong>
+                    Digit&#257;lais<br>Covid-19<br>sertifik&#257;ts
+                </strong>
+            </label>
+        </div>
+
+        <div class="ender">
+
+    </div>
+</header>
+<main>
+    <div class="content" id="mainBody">
+        <div class="hamburger-menu">
+
+
+<article class="form">
+    <div class="container">
+        <div style="background-color: var(--value-background-color); padding: 1em 2em;background-color:#fdf6dd">
+
+        <p>Liel&#257;s apmekl&#275;t&#299;bas d&#275;&#316; t&#299;mek&#316;vietne covid19sertifikats.lv &#353;obr&#299;d nav pieejama. L&#363;dzu, m&#275;&#291;iniet piesl&#275;gties nedaudz v&#275;l&#257;k!</p>
+        <p>Vair&#257;k inform&#257;cijas par digit&#257;lo Covid-19 sertifik&#257;tu J&#363;s varat noskaidrot <a href="https://www.vmnvd.gov.lv/lv/digitalais-covid-19-sertifikats" rel="external">https://www.vmnvd.gov.lv/lv/digitalais-covid-19-sertifikats</a></p>
+
+        <p>Paldies par paciet&#299;bu!</p>
+        </div>
+
+    </div>
+</article>
+    </div>
+</main>
+
+
+
+<footer>
+    <div class="container">
+        <div class="column info-column">
+            <p>Covid19sertifikats.lv ir Latvijas Republikas Nacion&#257;l&#257; vesel&#299;bas dienesta izveidota t&#299;mek&#316;vietne ar inform&#257;ciju par digit&#257;lo Covid-19 sertifik&#257;tu. </p>
+            <div class="separator"></div>
+            <p class="small-special">&#169; 2021 Covid19sertifikats.lv</p>
+        </div>
+
+        <div class="column">
+            <a href="https://manavakcina.lv" rel="external noopener" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="globe-europe" class="svg-inline--fa fa-globe-europe fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm200 248c0 22.5-3.9 44.2-10.8 64.4h-20.3c-4.3 0-8.4-1.7-11.4-4.8l-32-32.6c-4.5-4.6-4.5-12.1.1-16.7l12.5-12.5v-8.7c0-3-1.2-5.9-3.3-8l-9.4-9.4c-2.1-2.1-5-3.3-8-3.3h-16c-6.2 0-11.3-5.1-11.3-11.3 0-3 1.2-5.9 3.3-8l9.4-9.4c2.1-2.1 5-3.3 8-3.3h32c6.2 0 11.3-5.1 11.3-11.3v-9.4c0-6.2-5.1-11.3-11.3-11.3h-36.7c-8.8 0-16 7.2-16 16v4.5c0 6.9-4.4 13-10.9 15.2l-31.6 10.5c-3.3 1.1-5.5 4.1-5.5 7.6v2.2c0 4.4-3.6 8-8 8h-16c-4.4 0-8-3.6-8-8s-3.6-8-8-8H247c-3 0-5.8 1.7-7.2 4.4l-9.4 18.7c-2.7 5.4-8.2 8.8-14.3 8.8H194c-8.8 0-16-7.2-16-16V199c0-4.2 1.7-8.3 4.7-11.3l20.1-20.1c4.6-4.6 7.2-10.9 7.2-17.5 0-3.4 2.2-6.5 5.5-7.6l40-13.3c1.7-.6 3.2-1.5 4.4-2.7l26.8-26.8c2.1-2.1 3.3-5 3.3-8 0-6.2-5.1-11.3-11.3-11.3H258l-16 16v8c0 4.4-3.6 8-8 8h-16c-4.4 0-8-3.6-8-8v-20c0-2.5 1.2-4.9 3.2-6.4l28.9-21.7c1.9-.1 3.8-.3 5.7-.3C358.3 56 448 145.7 448 256zM130.1 149.1c0-3 1.2-5.9 3.3-8l25.4-25.4c2.1-2.1 5-3.3 8-3.3 6.2 0 11.3 5.1 11.3 11.3v16c0 3-1.2 5.9-3.3 8l
